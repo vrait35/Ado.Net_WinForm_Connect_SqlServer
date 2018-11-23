@@ -49,7 +49,7 @@ namespace dzSqlConnectionStringBuilderWinForm
             }
 
             string connectionString = ConfigurationManager.ConnectionStrings["vrait35"].ConnectionString;
-            builder.ConnectionString = connectSqlServer;
+            builder.ConnectionString = connectionString;
             using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
             {
                 connection.Open();
